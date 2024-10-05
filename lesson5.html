@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5: JavaScript Basics</title>
+    <link rel="stylesheet" href="LessonEdit.css">
+</head>
+
+<body>
+    <header>
+        <a href="MainPage.html" class="logo">Home</a>
+        <h1>Lesson 5: JavaScript Basics</h1>
+    </header>
+
+    <section>
+        <h2>What is JavaScript?</h2>
+        <p>JavaScript is a versatile programming language used to add interactivity, control multimedia, animate images, and perform various other dynamic tasks on web pages. Unlike HTML and CSS, which define the structure and style of a page, JavaScript makes the page come alive.</p>
+
+        <h3>Basic JavaScript Syntax</h3>
+        <p>Here is a basic function in JavaScript:</p>
+        <pre>
+function greet() {
+  alert('Hello, welcome to the website!');
+}
+        </pre>
+
+        <h3>JavaScript in HTML</h3>
+        <p>JavaScript can be embedded directly in HTML using the <code>&lt;script&gt;</code> tag. When placed in the body section, it can interact with elements on the page.</p>
+
+        <h3>Example: Click Event</h3>
+        <p>Click the button below to trigger a JavaScript function that displays an alert message:</p>
+        <button onclick="greet()">Click Me!</button>
+
+        <script>
+        function greet() {
+          alert('Hello, welcome to the website!');
+        }
+        </script>
+
+        <h3>Variables</h3>
+        <p>In JavaScript, variables are used to store data values. Here’s an example of declaring and using variables:</p>
+        <pre>
+let name = 'John';
+let age = 25;
+console.log(name); // Outputs: John
+console.log(age);  // Outputs: 25
+        </pre>
+
+        <h3>Conditions</h3>
+        <p>Conditional statements control how your code behaves based on different conditions. For example, an if-else statement:</p>
+        <pre>
+let time = 15;
+
+if (time < 12) {
+  alert('Good morning!');
+} else {
+  alert('Good afternoon!');
+}
+        </pre>
+
+        <h3>Loops</h3>
+        <p>Loops are used to execute a block of code multiple times. Below is an example of a <code>for</code> loop:</p>
+        <pre>
+for (let i = 0; i < 5; i++) {
+  console.log('This is loop number ' + i);
+}
+        </pre>
+
+        <h3>Example: Changing Content</h3>
+        <p>JavaScript can also change the content of an HTML element dynamically. Click the button below to change the text inside the paragraph:</p>
+        <p id="changeText">This is the original text.</p>
+        <button onclick="changeContent()">Change Text</button>
+
+        <script>
+        function changeContent() {
+          document.getElementById('changeText').innerHTML = 'This is the new text!';
+        }
+        </script>
+    </section>
+
+    <footer>
+        <a href="lesson6.html" class="btn1">Next Lesson: JavaScript Events</a>
+    </footer>
+</body>
+</html>

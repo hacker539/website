@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4: Advanced CSS</title>
+    <link rel="stylesheet" href="LessonEdit.css">
+</head>
+
+<body>
+    <header>
+        <a href="MainPage.html" class="logo">Home</a>
+        <h1>Lesson 4: Advanced CSS</h1>
+    </header>
+
+    <section>
+        <h2>Advanced CSS Concepts</h2>
+        <p>As you grow your CSS skills, it’s important to learn some of the more advanced layout techniques that will help you build responsive and visually appealing websites. Below are some important concepts to master:</p>
+
+        <ul>
+            <li><strong>Flexbox:</strong> A one-dimensional layout model that allows elements to align and distribute space within a container. It's a great tool for creating flexible, responsive layouts without using floats or positioning.</li>
+            <li><strong>Grid:</strong> A two-dimensional layout system that helps you organize your content in rows and columns. It gives you fine control over your design, making it easier to create complex layouts.</li>
+            <li><strong>Transitions & Animations:</strong> These are used to create smooth and engaging visual effects. Transitions allow you to change property values smoothly (e.g., hover effects), while animations let you define keyframes for more complex motion sequences.</li>
+        </ul>
+
+        <h3>Example 1: Flexbox</h3>
+        <p>The Flexbox model provides a flexible way to arrange items within a container. Here’s a basic example:</p>
+        <pre>
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.item {
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid navy;
+}
+        </pre>
+
+        <h3>Example 2: CSS Grid</h3>
+        <p>The CSS Grid system allows you to create more complex, two-dimensional layouts. You can easily define rows and columns:</p>
+        <pre>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-gap: 20px; /* Space between the grid items */
+}
+
+.grid-item {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+        </pre>
+
+        <h3>Example 3: Transitions & Animations</h3>
+        <p>CSS transitions and animations add interactivity and liveliness to your webpage. Here’s a hover effect using a transition:</p>
+        <pre>
+.button {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: darkgreen; /* Changes color when hovered */
+}
+        </pre>
+        <p>Here’s a basic animation example where an element moves horizontally:</p>
+        <pre>
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  animation: slide 2s infinite alternate; /* Moves back and forth */
+}
+        </pre>
+    </section>
+
+    <footer>
+        <a href="lesson5.html" class="btn1">Next Lesson: JavaScript Basics</a>
+    </footer>
+</body>
+
+</html>
+

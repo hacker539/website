@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Introduction to HTML</title>
+    <link rel="stylesheet" href="LessonEdit.css">
+</head>
+
+<body>
+    <header>
+        <a href="MainPage.html" class="logo">Home</a>
+        <h1>Lesson 1: Introduction to HTML</h1>
+    </header>
+
+    <section>
+        <h2>What is HTML?</h2>
+        <p>HTML (HyperText Markup Language) is the fundamental language for creating web pages and web applications. It defines the structure of content on the web. HTML elements, represented by tags, define different types of content such as headings, paragraphs, links, images, and more.</p>
+
+        <h3>Key Concepts in HTML</h3>
+        <p>Here are some important concepts and features of HTML:</p>
+        <ul>
+            <li><strong>Tags:</strong> HTML is made up of elements represented by tags. Tags usually come in pairs like &lt;tag&gt; and &lt;/tag&gt;, enclosing the content between them.</li>
+            <li><strong>Attributes:</strong> Tags can have attributes that provide additional information about an element. For example, the &lt;a&gt; tag has an attribute <code>href</code> that defines the link's destination.</li>
+            <li><strong>Nesting:</strong> HTML elements can be nested inside one another to create more complex structures. For example, a list can have list items inside it.</li>
+            <li><strong>Comments:</strong> You can add comments in HTML code using &lt;!-- comment here --&gt;. Comments are ignored by the browser.</li>
+        </ul>
+
+        <h3>Basic Structure of an HTML Document</h3>
+        <p>An HTML document follows a basic structure that includes several essential elements:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;  <!-- Defines the document type as HTML5 -->
+&lt;html lang="en"&gt; <!-- Opening tag for the HTML document -->
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;  <!-- Declares character encoding -->
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <!-- Ensures proper scaling on mobile devices -->
+    &lt;title&gt;Page Title&lt;/title&gt; <!-- Sets the page title visible on the browser tab -->
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;  <!-- Main heading of the page -->
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;  <!-- A block of text -->
+    &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt; <!-- A hyperlink element -->
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h3>Common HTML Tags and Their Usage</h3>
+        <p>Here are a few of the most commonly used HTML tags:</p>
+        <ul>
+            <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> These are heading tags, with &lt;h1&gt; being the largest and most important, and &lt;h6&gt; the smallest.</li>
+            <li><strong>&lt;p&gt;:</strong> Defines a paragraph. It’s a block-level element that takes up the full width available.</li>
+            <li><strong>&lt;a&gt;:</strong> Creates a hyperlink. The <code>href</code> attribute defines the URL.</li>
+            <li><strong>&lt;img&gt;:</strong> Embeds an image. The <code>src</code> attribute specifies the image file path.</li>
+            <li><strong>&lt;div&gt;:</strong> A division or section in the document. It groups other elements.</li>
+        </ul>
+
+        <h3>HTML5 Features</h3>
+        <p>HTML5 introduced several new elements and features for building modern websites:</p>
+        <ul>
+            <li><strong>&lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;:</strong> These semantic elements help in structuring the content logically and improve accessibility.</li>
+            <li><strong>Multimedia Support:</strong> HTML5 supports embedding audio (&lt;audio&gt;) and video (&lt;video&gt;) content without needing external plugins like Flash.</li>
+            <li><strong>Canvas and SVG:</strong> Allows for the drawing of graphics and animations directly in the browser using &lt;canvas&gt; or Scalable Vector Graphics (SVG).</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a href="lesson2.html" class="btn">Next Lesson: HTML Tags</a>
+    </footer>
+</body>
+
+</html>

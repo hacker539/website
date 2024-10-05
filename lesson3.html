@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: CSS Basics</title>
+    <link rel="stylesheet" href="LessonEdit.css">
+</head>
+
+<body>
+    <header>
+        <a href="MainPage.html" class="logo">Home</a>
+        <h1>Lesson 3: CSS Basics</h1>
+    </header>
+
+    <section>
+        <h2>What is CSS?</h2>
+        <p>CSS (Cascading Style Sheets) is a language used to control the presentation of HTML documents. It allows you to style elements on a web page, making them visually appealing and adaptable to different screen sizes. CSS is essential for web design and is used to define layout, colors, fonts, and more.</p>
+
+        <h3>Why CSS is Important</h3>
+        <p>CSS separates content (HTML) from presentation, allowing you to easily apply consistent styles across a website. It also provides flexibility and control over how your pages look on various devices, such as mobile phones, tablets, and desktops.</p>
+
+        <h3>Basic CSS Syntax</h3>
+        <p>CSS is composed of selectors, properties, and values. Here's the general structure:</p>
+        <pre>
+selector {
+  property: value;
+}
+        </pre>
+        <ul>
+            <li><strong>Selector:</strong> The HTML element you want to style (e.g., <code>body</code>, <code>h1</code>, <code>p</code>).</li>
+            <li><strong>Property:</strong> The aspect of the element you want to change (e.g., <code>color</code>, <code>font-size</code>, <code>margin</code>).</li>
+            <li><strong>Value:</strong> The specific style you want to apply to the property (e.g., <code>red</code>, <code>16px</code>, <code>10px</code>).</li>
+        </ul>
+
+        <h3>Example of CSS Styles</h3>
+        <p>Here’s an example of how to style your page using CSS:</p>
+        <pre>
+body {
+  background-color: lightblue; /* Changes the background color */
+}
+
+h1 {
+  color: navy; /* Sets the text color */
+  text-align: center; /* Centers the heading text */
+  font-family: Arial, sans-serif; /* Changes the font */
+}
+
+p {
+  font-size: 16px; /* Sets the font size of paragraphs */
+  line-height: 1.5; /* Increases line spacing for better readability */
+  color: darkgray; /* Changes the text color */
+}
+        </pre>
+
+        <h3>Types of CSS</h3>
+        <p>CSS can be applied in three ways:</p>
+        <ul>
+            <li><strong>Inline CSS:</strong> CSS written directly inside an HTML tag using the <code>style</code> attribute.</li>
+            <li><strong>Internal CSS:</strong> CSS placed within a &lt;style&gt; tag in the head of your HTML document.</li>
+            <li><strong>External CSS:</strong> CSS stored in a separate file (e.g., <code>styles.css</code>) and linked to the HTML file using a &lt;link&gt; tag.</li>
+        </ul>
+
+        <h3>Example of an External CSS Link</h3>
+        <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+        </pre>
+        <p>This example links an external CSS file to your HTML document, keeping your design and content separate for better organization and maintainability.</p>
+    </section>
+
+    <footer>
+        <a href="lesson4.html" class="btn1">Next Lesson: Advanced CSS</a>
+    </footer>
+</body>
+</html>
+
